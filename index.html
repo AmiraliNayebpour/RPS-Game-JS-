@@ -1,0 +1,38 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>
+			Rock,Paper,Scissors Game!!
+		</h1>
+		<h2>
+			Please Select One Of These("Rock" , "Paper" , "Scissors")!;
+		</h2>
+		<h4>
+			First Player
+		</h4>	
+		<input type="text" id="FirstPlayer">
+		<h4>
+			Second Player
+		</h4>	
+		<input type="text" id="SecondPlayer">
+		<br>
+		<input type="Button" onclick="Clicked()" value="Click!!">
+	</body>
+	<script>
+		function Clicked(){	
+		var FirstPlayer = document.getElementById("FirstPlayer").value;
+		var SecondPlayer = document.getElementById("SecondPlayer").value;
+		if(FirstPlayer == SecondPlayer){
+			alert("Equals!! Please Try Again!!");
+		}else if(FirstPlayer == "Rock" && SecondPlayer == "Scissors" || FirstPlayer == "Paper" && SecondPlayer == "Rock" || FirstPlayer == "Scissors" &&SecondPlayer == "Paper"){
+			alert("FirstPlayer Win!!");
+		}else{
+			alert("SecondPlayer Win!!");
+		}
+	}
+	</script>
+
+
+
+</html>
